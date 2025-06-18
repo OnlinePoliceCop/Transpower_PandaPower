@@ -49,6 +49,7 @@ def create_transpower_network():
                     'bus_idx': bus_idx,
                     'name': str(row['MXLOCATION']),
                     'type': str(row['type']),
+                    'description': str(row['description']),
                     'lat': lat,
                     'lon': lon,
                     'x': float(row['X']),

@@ -1,6 +1,62 @@
-#map {
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
     height: 100vh;
-    width: 100%;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+#map {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.network-controls {
+    margin-bottom: 20px;
+}
+
+.checkbox-group {
+    margin: 10px 0;
+}
+
+.checkbox-group label {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.info-panel {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: none;
+}
+
+.info-panel h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+#substation-details p {
+    margin: 5px 0;
+}
+
+.substation-icon {
+    background: none;
+    border: none;
 }
 
 .layer-control {

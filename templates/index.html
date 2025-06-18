@@ -3,33 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Zealand Power Network</title>
+    <title>Network Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 </head>
 <body>
-    <div id="map"></div>
-
-    <div class="layer-control">
-        <h5>Network Components</h5>
-        <div class="component-filter">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="component" value="Substations" id="component-substations" checked>
-                <label class="form-check-label" for="component-substations">Substations</label>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Network Components</h2>
+            <div class="network-controls">
+                <h3>Transpower Network</h3>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" id="transpower-substations" checked>
+                        Substations
+                    </label>
+                    <label>
+                        <input type="checkbox" id="transpower-lines" checked>
+                        Transmission Lines
+                    </label>
+                </div>
+                <h3>Vector Network</h3>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" id="vector-substations" checked>
+                        Substations
+                    </label>
+                    <label>
+                        <input type="checkbox" id="vector-lines" checked>
+                        Transmission Lines
+                    </label>
+                </div>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="component" value="Lines" id="component-lines" checked>
-                <label class="form-check-label" for="component-lines">Lines</label>
+            <div id="substation-info" class="info-panel">
+                <h3>Substation Information</h3>
+                <div id="substation-details"></div>
             </div>
         </div>
+        <div id="map"></div>
     </div>
 
-    <div id="substation-info" class="substation-info">
-        <div id="substation-info-content"></div>
-    </div>
-
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="{{ url_for('static', filename='js/map.js') }}"></script>
 </body>
 </html> 
