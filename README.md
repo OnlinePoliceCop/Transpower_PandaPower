@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # New Zealand Power Network Visualization
 
 This project provides an interactive visualization of New Zealand's power network, including transmission lines and substations. The visualization allows users to explore different voltage levels and network components through an interactive map interface.
@@ -49,3 +50,7 @@ The application uses two main data files:
 - Mapping: Leaflet.js
 - Data Processing: Pandas, GeoPandas
 - Styling: Bootstrap 5 
+=======
+# Transpower_PandaPower
+A project with the aim of being able to do small power systems studies by adding a network node and being able to get the distance to the nearest substation and be able to perform power systems analysis studies on a new potential load or generator.
+>>>>>>> 1911934d68f4cdda077caadb7c47af1e4fa46dc6
