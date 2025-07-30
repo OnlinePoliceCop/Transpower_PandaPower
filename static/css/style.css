@@ -1,0 +1,102 @@
+#map {
+    height: 100vh;
+    width: 100%;
+}
+
+#substation-info {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 400px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.ribbon-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.ribbon-header h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.ribbon-header button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #666;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.ribbon-header button:hover {
+    color: #333;
+}
+
+.ribbon-content {
+    padding: 20px;
+}
+
+.info-section {
+    margin-bottom: 20px;
+}
+
+.info-section h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+    color: #444;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.info-section p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.power-flow-section {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.power-flow-section p {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.power-flow-section strong {
+    color: #444;
+}
+
+.connected-line {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.connected-line p {
+    margin: 5px 0;
+}
+
+.connected-line strong {
+    color: #444;
+} 
